@@ -335,7 +335,7 @@ function drawOptionsMenu() {
   });
   fill(0);
   textAlign(LEFT);
-  textSize(tileSize);
+  textSize(32);
   noStroke();
   text("Tile Size: ", width / 10, (1 * height) / 5 + tileSize * 1.5);
   text("Board Size: ", width / 10, (2 * height) / 5 + tileSize * 1.5);
