@@ -333,6 +333,13 @@ function drawOptionsMenu() {
   Object.values(optionsSelectors).forEach(selector => {
     selector.show();
   });
+  fill(0);
+  textAlign(LEFT);
+  textSize(tileSize);
+  noStroke();
+  text("Tile Size: ", width / 10, (1 * height) / 5 + tileSize * 1.5);
+  text("Board Size: ", width / 10, (2 * height) / 5 + tileSize * 1.5);
+  text("Difficulty: ", width / 10, (3 * height) / 5 + tileSize * 1.5);
   optionsToMenu.show();
 }
 
