@@ -1,13 +1,7 @@
-#keyboard {
-    position: static;
-    box-sizing: border-box;
-    margin: 0;
-}
-
 ul#keyboard {
-    height: 18.875em;
+    height: 16em;
     width:100%;
-    margin: 5em auto;
+    margin: 0;
     padding: 1em 0;
     position: relative;
 }
@@ -23,6 +17,8 @@ li.white-key {
     z-index: 1;
     border: 1px solid black;
     border-radius: 0 0 5px 5px;
+    background: white;
+    transition: 0.1s;
 }
 
 li.ls {
@@ -41,9 +37,10 @@ li.black-key {
     border: 1px solid black;
     border-radius: 0 0 3px 3px;
     background: black;
+    transition: 0.1s;
 }
 
-li.white-key:active, li.black-key:active {
+li.highlighted {
     background:red;
 }
 
@@ -53,4 +50,61 @@ ul#keyboard li:first-child {
 
 ul#keyboard li:last-child {
     border-radius: 0 5px 5px 5px;
+}
+
+/********************************/
+#menus {
+    margin: 2em;
+    margin-bottom: 200px;
+    position: inline-block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f8f8f8;
+    min-width: 190px;
+    height: 200px;
+    z-index: 1;
+    box-shadow: 0px 8px 16pz 0pz rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    overflow-y: scroll;
+    border: 3px solid #4f4f4f;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/********************************/
+#randomizer {
+    margin: 2em;
+    padding: 1em;
+    border: 2px solid #4f4f4f;
+    border-radius: 5px;
+}
+
+#randomizer * {
+    margin: 1em;
+}
+
+#randomizer span {
+    font-weight: bold;
 }
