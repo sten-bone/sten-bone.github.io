@@ -1,9 +1,17 @@
+a {
+    cursor: pointer;
+}
+
+.inner {
+    text-align: center;
+}
+
+/********************************/
 ul#keyboard {
-    height: 16em;
+    height: 10em;
     width:100%;
     margin: 0;
-    padding: 1em 0;
-    position: relative;
+    padding: 0;
 }
 
 li.white-key {
@@ -12,7 +20,7 @@ li.white-key {
     list-style: none;
     position: relative;
     float: left;
-    height: 40%;
+    height: 100%;
     width: 4.54%;
     z-index: 1;
     border: 1px solid black;
@@ -30,7 +38,7 @@ li.black-key {
     list-style: none;
     position: relative;
     float: left;
-    height: 25%;
+    height: 60%;
     width: 2.27%;
     margin: 0 0 0 -1.135%;
     z-index: 2;
@@ -54,7 +62,7 @@ ul#keyboard li:last-child {
 
 /********************************/
 #menus {
-    margin: 2em;
+    margin: 1em 0;
     margin-bottom: 200px;
     position: inline-block;
 }
@@ -95,10 +103,11 @@ ul#keyboard li:last-child {
 
 /********************************/
 #randomizer {
-    margin: 2em;
+    margin: 1em 0;
     padding: 1em;
     border: 2px solid #4f4f4f;
     border-radius: 5px;
+    
 }
 
 #randomizer * {

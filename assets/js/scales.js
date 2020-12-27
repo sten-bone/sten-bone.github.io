@@ -47,7 +47,7 @@ $(document).ready(function () {
             removeHighlights();
             $("#ds-2").addClass("highlighted");
             $("#f-2").addClass("highlighted");
-            $("#f-2").addClass("highlighted");
+            $("#g-2").addClass("highlighted");
             $("#gs-2").addClass("highlighted");
             $("#as-2").addClass("highlighted");
             $("#c-3").addClass("highlighted");
@@ -446,13 +446,262 @@ $(document).ready(function () {
         });
     }
 
+    // Major Pentatonic Scales
+    function setUpMajorPentatonicScales() {
+        $("#c-maj-p").click(function() {
+            removeHighlights();
+            $("#c-2").addClass("highlighted");
+            $("#d-2").addClass("highlighted");
+            $("#e-2").addClass("highlighted");
+            $("#g-2").addClass("highlighted");
+            $("#a-2").addClass("highlighted");
+            $("#c-3").addClass("highlighted");
+        });
+
+        $("#db-maj-p").click(function() {
+            removeHighlights();
+            $("#cs-2").addClass("highlighted");
+            $("#ds-2").addClass("highlighted");
+            $("#f-2").addClass("highlighted");
+            $("#gs-2").addClass("highlighted");
+            $("#as-2").addClass("highlighted");
+            $("#cs-3").addClass("highlighted");
+        });
+
+        $("#d-maj-p").click(function() {
+            removeHighlights();
+            $("#d-2").addClass("highlighted");
+            $("#e-2").addClass("highlighted");
+            $("#fs-2").addClass("highlighted");
+            $("#a-2").addClass("highlighted");
+            $("#b-2").addClass("highlighted");
+            $("#d-3").addClass("highlighted");
+        });
+
+        $("#eb-maj-p").click(function() {
+            removeHighlights();
+            $("#ds-2").addClass("highlighted");
+            $("#f-2").addClass("highlighted");
+            $("#fs-2").addClass("highlighted");
+            $("#as-2").addClass("highlighted");
+            $("#c-3").addClass("highlighted");
+            $("#ds-3").addClass("highlighted");
+        });
+
+        $("#e-maj-p").click(function() {
+            removeHighlights();
+            $("#e-2").addClass("highlighted");
+            $("#fs-2").addClass("highlighted");
+            $("#gs-2").addClass("highlighted");
+            $("#b-2").addClass("highlighted");
+            $("#cs-3").addClass("highlighted");
+            $("#e-3").addClass("highlighted");
+        });
+
+        $("#f-maj-p").click(function() {
+            removeHighlights();
+            $("#f-2").addClass("highlighted");
+            $("#g-2").addClass("highlighted");
+            $("#a-2").addClass("highlighted");
+            $("#c-3").addClass("highlighted");
+            $("#d-3").addClass("highlighted");
+            $("#f-3").addClass("highlighted");
+        });
+
+        $("#gb-maj-p").click(function() {
+            removeHighlights();
+            $("#fs-2").addClass("highlighted");
+            $("#gs-2").addClass("highlighted");
+            $("#as-2").addClass("highlighted");
+            $("#cs-3").addClass("highlighted");
+            $("#ds-3").addClass("highlighted");
+            $("#fs-3").addClass("highlighted");
+        });
+
+        $("#g-maj-p").click(function() {
+            removeHighlights();
+            $("#g-1").addClass("highlighted");
+            $("#a-1").addClass("highlighted");
+            $("#b-1").addClass("highlighted");
+            $("#d-2").addClass("highlighted");
+            $("#e-2").addClass("highlighted");
+            $("#g-2").addClass("highlighted");
+        });
+
+        $("#ab-maj-p").click(function() {
+            removeHighlights();
+            $("#gs-1").addClass("highlighted");
+            $("#as-1").addClass("highlighted");
+            $("#c-2").addClass("highlighted");
+            $("#ds-2").addClass("highlighted");
+            $("#f-2").addClass("highlighted");
+            $("#gs-2").addClass("highlighted");
+        });
+
+        $("#a-maj-p").click(function() {
+            removeHighlights();
+            $("#a-1").addClass("highlighted");
+            $("#b-1").addClass("highlighted");
+            $("#cs-2").addClass("highlighted");
+            $("#e-2").addClass("highlighted");
+            $("#fs-2").addClass("highlighted");
+            $("#a-2").addClass("highlighted");
+        });
+
+        $("#bb-maj-p").click(function() {
+            removeHighlights();
+            $("#as-1").addClass("highlighted");
+            $("#c-2").addClass("highlighted");
+            $("#d-2").addClass("highlighted");
+            $("#f-2").addClass("highlighted");
+            $("#g-2").addClass("highlighted");
+            $("#as-2").addClass("highlighted");
+        });
+
+        $("#b-maj-p").click(function() {
+            removeHighlights();
+            $("#b-1").addClass("highlighted");
+            $("#cs-2").addClass("highlighted");
+            $("#ds-2").addClass("highlighted");
+            $("#fs-2").addClass("highlighted");
+            $("#gs-2").addClass("highlighted");
+            $("#b-2").addClass("highlighted");
+        });
+    }
+
+    // Minor Pentatonic Scales
+    function setUpMinorPentatonicScales() {
+        $("#c-min-p").click(function() {
+            removeHighlights();
+            $("#c-2").addClass("highlighted");
+            $("#ds-2").addClass("highlighted");
+            $("#f-2").addClass("highlighted");
+            $("#g-2").addClass("highlighted");
+            $("#as-2").addClass("highlighted");
+            $("#c-3").addClass("highlighted");
+        });
+
+        $("#db-min-p").click(function() {
+            removeHighlights();
+            $("#cs-2").addClass("highlighted");
+            $("#e-2").addClass("highlighted");
+            $("#fs-2").addClass("highlighted");
+            $("#gs-2").addClass("highlighted");
+            $("#b-2").addClass("highlighted");
+            $("#cs-3").addClass("highlighted");
+        });
+
+        $("#d-min-p").click(function() {
+            removeHighlights();
+            $("#d-2").addClass("highlighted");
+            $("#f-2").addClass("highlighted");
+            $("#g-2").addClass("highlighted");
+            $("#a-2").addClass("highlighted");
+            $("#c-3").addClass("highlighted");
+            $("#d-3").addClass("highlighted");
+        });
+
+        $("#eb-min-p").click(function() {
+            removeHighlights();
+            $("#ds-2").addClass("highlighted");
+            $("#fs-2").addClass("highlighted");
+            $("#gs-2").addClass("highlighted");
+            $("#as-2").addClass("highlighted");
+            $("#cs-3").addClass("highlighted");
+            $("#ds-3").addClass("highlighted");
+        });
+
+        $("#e-min-p").click(function() {
+            removeHighlights();
+            $("#e-2").addClass("highlighted");
+            $("#g-2").addClass("highlighted");
+            $("#a-2").addClass("highlighted");
+            $("#b-2").addClass("highlighted");
+            $("#d-3").addClass("highlighted");
+            $("#e-3").addClass("highlighted");
+        });
+
+        $("#f-min-p").click(function() {
+            removeHighlights();
+            $("#f-2").addClass("highlighted");
+            $("#gs-2").addClass("highlighted");
+            $("#as-2").addClass("highlighted");
+            $("#c-3").addClass("highlighted");
+            $("#ds-3").addClass("highlighted");
+            $("#f-3").addClass("highlighted");
+        });
+
+        $("#gb-min-p").click(function() {
+            removeHighlights();
+            $("#fs-2").addClass("highlighted");
+            $("#a-2").addClass("highlighted");
+            $("#b-2").addClass("highlighted");
+            $("#cs-3").addClass("highlighted");
+            $("#e-3").addClass("highlighted");
+            $("#fs-3").addClass("highlighted");
+        });
+
+        $("#g-min-p").click(function() {
+            removeHighlights();
+            $("#g-1").addClass("highlighted");
+            $("#as-1").addClass("highlighted");
+            $("#c-2").addClass("highlighted");
+            $("#d-2").addClass("highlighted");
+            $("#f-2").addClass("highlighted");
+            $("#g-2").addClass("highlighted");
+        });
+
+        $("#ab-min-p").click(function() {
+            removeHighlights();
+            $("#gs-1").addClass("highlighted");
+            $("#b-1").addClass("highlighted");
+            $("#cs-2").addClass("highlighted");
+            $("#ds-2").addClass("highlighted");
+            $("#fs-2").addClass("highlighted");
+            $("#gs-2").addClass("highlighted");
+        });
+
+        $("#a-min-p").click(function() {
+            removeHighlights();
+            $("#a-1").addClass("highlighted");
+            $("#c-2").addClass("highlighted");
+            $("#d-2").addClass("highlighted");
+            $("#e-2").addClass("highlighted");
+            $("#g-2").addClass("highlighted");
+            $("#a-2").addClass("highlighted");
+        });
+
+        $("#bb-min-p").click(function() {
+            removeHighlights();
+            $("#as-1").addClass("highlighted");
+            $("#cs-2").addClass("highlighted");
+            $("#ds-2").addClass("highlighted");
+            $("#f-2").addClass("highlighted");
+            $("#gs-2").addClass("highlighted");
+            $("#as-2").addClass("highlighted");
+        });
+
+        $("#b-min-p").click(function() {
+            removeHighlights();
+            $("#b-1").addClass("highlighted");
+            $("#d-2").addClass("highlighted");
+            $("#e-2").addClass("highlighted");
+            $("#fs-2").addClass("highlighted");
+            $("#a-2").addClass("highlighted");
+            $("#b-2").addClass("highlighted");
+        });
+    }
+
     // Set up all scales
     setUpMajorScales();
     setUpNaturalMinorScales();
     setUpHarmonicMinorScales();
+    setUpMajorPentatonicScales();
+    setUpMinorPentatonicScales();
 
     // function to choose a scale at random
     function chooseRandomScale() {
+        removeHighlights();
         var len = $(".scale").length;
         var rand = Math.floor(Math.random() * len);
         var scale = $(".scale").eq(rand);
