@@ -1,0 +1,56 @@
+#keyboard {
+    position: static;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ul#keyboard {
+    height: 18.875em;
+    width:100%;
+    margin: 5em auto;
+    padding: 1em 0;
+    position: relative;
+}
+
+li.white-key {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    float: left;
+    height: 40%;
+    width: 4.54%;
+    z-index: 1;
+    border: 1px solid black;
+    border-radius: 0 0 5px 5px;
+}
+
+li.ls {
+    margin: 0 0 0 -1.135%;
+}
+
+li.black-key {
+    padding: 0;
+    list-style: none;
+    position: relative;
+    float: left;
+    height: 25%;
+    width: 2.27%;
+    margin: 0 0 0 -1.135%;
+    z-index: 2;
+    border: 1px solid black;
+    border-radius: 0 0 3px 3px;
+    background: black;
+}
+
+li.white-key:active, li.black-key:active {
+    background:red;
+}
+
+ul#keyboard li:first-child {
+    border-radius: 5px 0 5px 5px;
+}
+
+ul#keyboard li:last-child {
+    border-radius: 0 5px 5px 5px;
+}
