@@ -107,11 +107,14 @@ ul#keyboard li:last-child {
     padding: 1em;
     border: 2px solid #4f4f4f;
     border-radius: 5px;
-    
 }
 
 #randomizer * {
     margin: 1em;
+}
+
+#randomizer button {
+    max-width: 90%;
 }
 
 #randomizer span {
