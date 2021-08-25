@@ -90,99 +90,153 @@
           </ul>
           <a id="clear">Remove Highlighting</a>
 
-          <div id="randomizer">
-            <button id="randombtn">Random Scale</button>
-            <div>
-              <span id="random_scale"></span>
-              <a id="show_scale"></a>
+          <div id="controls">
+            <div id="randomizer">
+              <button id="randombtn">Random Scale</button>
+              <div>
+                <span id="random_scale"></span><br>
+                <a id="show_scale"></a>
+              </div>
             </div>
-          </div>
-  
-          <div id="menus">
-            <div class="dropdown">
-              <button class="dropbtn">Major Scales</button>
-              <nav class="dropdown-content">
-                <a class="scale" id="c-maj">C Major</a>
-                <a class="scale" id="db-maj">D♭ Major</a>
-                <a class="scale" id="d-maj">D Major</a>
-                <a class="scale" id="eb-maj">E♭ Major</a>
-                <a class="scale" id="e-maj">E Major</a>
-                <a class="scale" id="f-maj">F Major</a>
-                <a class="scale" id="gb-maj">G♭ Major</a>
-                <a class="scale" id="g-maj">G Major</a>
-                <a class="scale" id="ab-maj">A♭ Major</a>
-                <a class="scale" id="a-maj">A Major</a>
-                <a class="scale" id="bb-maj">B♭ Major</a>
-                <a class="scale" id="b-maj">B Major</a>
-              </nav>
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn">Natural Minor Scales</button>
-              <nav class="dropdown-content">
-                <a class="scale" id="c-min">C Natural Minor</a>
-                <a class="scale" id="db-min">D♭ Natural Minor</a>
-                <a class="scale" id="d-min">D Natural Minor</a>
-                <a class="scale" id="eb-min">E♭ Natural Minor</a>
-                <a class="scale" id="e-min">E Natural Minor</a>
-                <a class="scale" id="f-min">F Natural Minor</a>
-                <a class="scale" id="gb-min">G♭ Natural Minor</a>
-                <a class="scale" id="g-min">G Natural Minor</a>
-                <a class="scale" id="ab-min">A♭ Natural Minor</a>
-                <a class="scale" id="a-min">A Natural Minor</a>
-                <a class="scale" id="bb-min">B♭ Natural Minor</a>
-                <a class="scale" id="b-min">B Natural Minor</a>
-              </nav>
-            </div>
-            <div class="dropdown">
-                <button class="dropbtn">Harmonic Minor Scales</button>
+    
+            <div id="menus">
+              <div class="dropdown">
+                <button class="dropbtn">Major Scales</button>
                 <nav class="dropdown-content">
-                  <a class="scale" id="c-h-min">C Harmonic Minor</a>
-                  <a class="scale" id="db-h-min">D♭ Harmonic Minor</a>
-                  <a class="scale" id="d-h-min">D Harmonic Minor</a>
-                  <a class="scale" id="eb-h-min">E♭ Harmonic Minor</a>
-                  <a class="scale" id="e-h-min">E Harmonic Minor</a>
-                  <a class="scale" id="f-h-min">F Harmonic Minor</a>
-                  <a class="scale" id="gb-h-min">G♭ Harmonic Minor</a>
-                  <a class="scale" id="g-h-min">G Harmonic Minor</a>
-                  <a class="scale" id="ab-h-min">A♭ Harmonic Minor</a>
-                  <a class="scale" id="a-h-min">A Harmonic Minor</a>
-                  <a class="scale" id="bb-h-min">B♭ Harmonic Minor</a>
-                  <a class="scale" id="b-h-min">B Harmonic Minor</a>
+                  <a class="scale" id="c-maj">C Major</a>
+                  <a class="scale" id="db-maj">D♭ Major</a>
+                  <a class="scale" id="d-maj">D Major</a>
+                  <a class="scale" id="eb-maj">E♭ Major</a>
+                  <a class="scale" id="e-maj">E Major</a>
+                  <a class="scale" id="f-maj">F Major</a>
+                  <a class="scale" id="gb-maj">G♭ Major</a>
+                  <a class="scale" id="g-maj">G Major</a>
+                  <a class="scale" id="ab-maj">A♭ Major</a>
+                  <a class="scale" id="a-maj">A Major</a>
+                  <a class="scale" id="bb-maj">B♭ Major</a>
+                  <a class="scale" id="b-maj">B Major</a>
                 </nav>
               </div>
               <div class="dropdown">
-                  <button class="dropbtn">Major Pentatonic Scales</button>
+                <button class="dropbtn">Natural Minor Scales</button>
+                <nav class="dropdown-content">
+                  <a class="scale" id="c-min">C Natural Minor</a>
+                  <a class="scale" id="db-min">D♭ Natural Minor</a>
+                  <a class="scale" id="d-min">D Natural Minor</a>
+                  <a class="scale" id="eb-min">E♭ Natural Minor</a>
+                  <a class="scale" id="e-min">E Natural Minor</a>
+                  <a class="scale" id="f-min">F Natural Minor</a>
+                  <a class="scale" id="gb-min">G♭ Natural Minor</a>
+                  <a class="scale" id="g-min">G Natural Minor</a>
+                  <a class="scale" id="ab-min">A♭ Natural Minor</a>
+                  <a class="scale" id="a-min">A Natural Minor</a>
+                  <a class="scale" id="bb-min">B♭ Natural Minor</a>
+                  <a class="scale" id="b-min">B Natural Minor</a>
+                </nav>
+              </div>
+              <div class="dropdown">
+                  <button class="dropbtn">Harmonic Minor Scales</button>
                   <nav class="dropdown-content">
-                    <a class="scale" id="c-maj-p">C Major Pentatonic</a>
-                    <a class="scale" id="db-maj-p">D♭ Major Pentatonic</a>
-                    <a class="scale" id="d-maj-p">D Major Pentatonic</a>
-                    <a class="scale" id="eb-maj-p">E♭ Major Pentatonic</a>
-                    <a class="scale" id="e-maj-p">E Major Pentatonic</a>
-                    <a class="scale" id="f-maj-p">F Major Pentatonic</a>
-                    <a class="scale" id="gb-maj-p">G♭ Major Pentatonic</a>
-                    <a class="scale" id="g-maj-p">G Major Pentatonic</a>
-                    <a class="scale" id="ab-maj-p">A♭ Major Pentatonic</a>
-                    <a class="scale" id="a-maj-p">A Major Pentatonic</a>
-                    <a class="scale" id="bb-maj-p">B♭ Major Pentatonic</a>
-                    <a class="scale" id="b-maj-p">B Major Pentatonic</a>
+                    <a class="scale" id="c-h-min">C Harmonic Minor</a>
+                    <a class="scale" id="db-h-min">D♭ Harmonic Minor</a>
+                    <a class="scale" id="d-h-min">D Harmonic Minor</a>
+                    <a class="scale" id="eb-h-min">E♭ Harmonic Minor</a>
+                    <a class="scale" id="e-h-min">E Harmonic Minor</a>
+                    <a class="scale" id="f-h-min">F Harmonic Minor</a>
+                    <a class="scale" id="gb-h-min">G♭ Harmonic Minor</a>
+                    <a class="scale" id="g-h-min">G Harmonic Minor</a>
+                    <a class="scale" id="ab-h-min">A♭ Harmonic Minor</a>
+                    <a class="scale" id="a-h-min">A Harmonic Minor</a>
+                    <a class="scale" id="bb-h-min">B♭ Harmonic Minor</a>
+                    <a class="scale" id="b-h-min">B Harmonic Minor</a>
                   </nav>
                 </div>
-              <div class="dropdown">
-                <button class="dropbtn">Minor Pentatonic Scales</button>
-                <nav class="dropdown-content">
-                  <a class="scale" id="c-min-p">C Minor Pentatonic</a>
-                  <a class="scale" id="db-min-p">D♭ Minor Pentatonic</a>
-                  <a class="scale" id="d-min-p">D Minor Pentatonic</a>
-                  <a class="scale" id="eb-min-p">E♭ Minor Pentatonic</a>
-                  <a class="scale" id="e-min-p">E Minor Pentatonic</a>
-                  <a class="scale" id="f-min-p">F Minor Pentatonic</a>
-                  <a class="scale" id="gb-min-p">G♭ Minor Pentatonic</a>
-                  <a class="scale" id="g-min-p">G Minor Pentatonic</a>
-                  <a class="scale" id="ab-min-p">A♭ Minor Pentatonic</a>
-                  <a class="scale" id="a-min-p">A Minor Pentatonic</a>
-                  <a class="scale" id="bb-min-p">B♭ Minor Pentatonic</a>
-                  <a class="scale" id="b-min-p">B Minor Pentatonic</a>
-                </nav>
+                <div class="dropdown">
+                  <button class="dropbtn">Diminished Scales</button>
+                  <nav class="dropdown-content">
+                    <a class="scale" id="c-dim">C Diminished</a>
+                    <a class="scale" id="db-dim">D♭ Diminished</a>
+                    <a class="scale" id="d-dim">D Diminished</a>
+                    <a class="scale" id="eb-dim">E♭ Diminished</a>
+                    <a class="scale" id="e-dim">E Diminished</a>
+                    <a class="scale" id="f-dim">F Diminished</a>
+                    <a class="scale" id="gb-dim">G♭ Diminished</a>
+                    <a class="scale" id="g-dim">G Diminished</a>
+                    <a class="scale" id="ab-dim">A♭ Diminished</a>
+                    <a class="scale" id="a-dim">A Diminished</a>
+                    <a class="scale" id="bb-dim">B♭ Diminished</a>
+                    <a class="scale" id="b-dim">B Diminished</a>
+                  </nav>
+                </div>
+                <div class="dropdown">
+                  <button class="dropbtn">Augmented Scales</button>
+                  <nav class="dropdown-content">
+                    <a class="scale" id="c-aug">C Augmented</a>
+                    <a class="scale" id="db-aug">D♭ Augmented</a>
+                    <a class="scale" id="d-aug">D Augmented</a>
+                    <a class="scale" id="eb-aug">E♭ Augmented</a>
+                    <a class="scale" id="e-aug">E Augmented</a>
+                    <a class="scale" id="f-aug">F Augmented</a>
+                    <a class="scale" id="gb-aug">G♭ Augmented</a>
+                    <a class="scale" id="g-aug">G Augmented</a>
+                    <a class="scale" id="ab-aug">A♭ Augmented</a>
+                    <a class="scale" id="a-aug">A Augmented</a>
+                    <a class="scale" id="bb-aug">B♭ Augmented</a>
+                    <a class="scale" id="b-aug">B Augmented</a>
+                  </nav>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Major Pentatonic Scales</button>
+                    <nav class="dropdown-content">
+                      <a class="scale" id="c-maj-p">C Major Pentatonic</a>
+                      <a class="scale" id="db-maj-p">D♭ Major Pentatonic</a>
+                      <a class="scale" id="d-maj-p">D Major Pentatonic</a>
+                      <a class="scale" id="eb-maj-p">E♭ Major Pentatonic</a>
+                      <a class="scale" id="e-maj-p">E Major Pentatonic</a>
+                      <a class="scale" id="f-maj-p">F Major Pentatonic</a>
+                      <a class="scale" id="gb-maj-p">G♭ Major Pentatonic</a>
+                      <a class="scale" id="g-maj-p">G Major Pentatonic</a>
+                      <a class="scale" id="ab-maj-p">A♭ Major Pentatonic</a>
+                      <a class="scale" id="a-maj-p">A Major Pentatonic</a>
+                      <a class="scale" id="bb-maj-p">B♭ Major Pentatonic</a>
+                      <a class="scale" id="b-maj-p">B Major Pentatonic</a>
+                    </nav>
+                  </div>
+                <div class="dropdown">
+                  <button class="dropbtn">Minor Pentatonic Scales</button>
+                  <nav class="dropdown-content">
+                    <a class="scale" id="c-min-p">C Minor Pentatonic</a>
+                    <a class="scale" id="db-min-p">D♭ Minor Pentatonic</a>
+                    <a class="scale" id="d-min-p">D Minor Pentatonic</a>
+                    <a class="scale" id="eb-min-p">E♭ Minor Pentatonic</a>
+                    <a class="scale" id="e-min-p">E Minor Pentatonic</a>
+                    <a class="scale" id="f-min-p">F Minor Pentatonic</a>
+                    <a class="scale" id="gb-min-p">G♭ Minor Pentatonic</a>
+                    <a class="scale" id="g-min-p">G Minor Pentatonic</a>
+                    <a class="scale" id="ab-min-p">A♭ Minor Pentatonic</a>
+                    <a class="scale" id="a-min-p">A Minor Pentatonic</a>
+                    <a class="scale" id="bb-min-p">B♭ Minor Pentatonic</a>
+                    <a class="scale" id="b-min-p">B Minor Pentatonic</a>
+                  </nav>
+                </div>
+                <div class="dropdown">
+                  <button class="dropbtn">Blues Scales</button>
+                  <nav class="dropdown-content">
+                    <a class="scale" id="c-blues">C Blues</a>
+                    <a class="scale" id="db-blues">D♭ Blues</a>
+                    <a class="scale" id="d-blues">D Blues</a>
+                    <a class="scale" id="eb-blues">E♭ Blues</a>
+                    <a class="scale" id="e-blues">E Blues</a>
+                    <a class="scale" id="f-blues">F Blues</a>
+                    <a class="scale" id="gb-blues">G♭ Blues</a>
+                    <a class="scale" id="g-blues">G Blues</a>
+                    <a class="scale" id="ab-blues">A♭ Blues</a>
+                    <a class="scale" id="a-blues">A Blues</a>
+                    <a class="scale" id="bb-blues">B♭ Blues</a>
+                    <a class="scale" id="b-blues">B Blues</a>
+                  </nav>
+                </div>
+                </div>
               </div>
             </div>
         </div>

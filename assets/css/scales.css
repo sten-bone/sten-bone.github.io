@@ -48,8 +48,12 @@ li.black-key {
     transition: 0.1s;
 }
 
-li.highlighted {
-    background:red;
+.white-key.highlighted {
+    background: #ff0000;
+}
+
+.black-key.highlighted {
+    background: #bb0000;
 }
 
 ul#keyboard li:first-child {
@@ -65,6 +69,10 @@ ul#keyboard li:last-child {
     margin: 1em 0;
     margin-bottom: 200px;
     position: inline-block;
+}
+
+#controls {
+    display: flex;
 }
 
 .dropdown {
