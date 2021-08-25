@@ -1,8 +1,15 @@
 $(document).ready(function () {
+    
+    $("#keyboard li").click(function() {
+        $(this).toggleClass("selected");
+    });
 
     function removeHighlights() {
-        $(".white-key").removeClass("highlighted");
-        $(".black-key").removeClass("highlighted");
+        $("#keyboard li").removeClass("highlighted");
+    }
+
+    function removeSelected() {
+        $("#keyboard li").removeClass("selected");
     }
 
     // Major Scales
@@ -466,10 +473,10 @@ $(document).ready(function () {
             $("#cs-2").addClass("highlighted");
             $("#ds-2").addClass("highlighted");
             $("#e-2").addClass("highlighted");
-            $("#gb-2").addClass("highlighted");
+            $("#fs-2").addClass("highlighted");
             $("#g-2").addClass("highlighted");
             $("#a-2").addClass("highlighted");
-            $("#bb-2").addClass("highlighted");
+            $("#as-2").addClass("highlighted");
             $("#c-3").addClass("highlighted");
             $("#cs-3").addClass("highlighted");
         });
@@ -1121,6 +1128,10 @@ $(document).ready(function () {
         });
     }
 
+    function setUpKeyboardInteraction() {
+
+    }
+
     // Set up all scales
     setUpMajorScales();
     setUpNaturalMinorScales();
@@ -1131,9 +1142,12 @@ $(document).ready(function () {
     setUpMinorPentatonicScales();
     setUpBluesScales();
 
+    setUpKeyboardInteraction();
+
     // function to choose a scale at random
     function chooseRandomScale() {
         removeHighlights();
+        removeSelected();
         var len = $(".scale").length;
         var rand = Math.floor(Math.random() * len);
         var scale = $(".scale").eq(rand);
@@ -1144,6 +1158,7 @@ $(document).ready(function () {
         });
     }
 
-    $("#clear").click(removeHighlights);
+    $("#clear-highlight").click(removeHighlights);
+    $("#clear-selection").click(removeSelected);
     $("#randombtn").click(chooseRandomScale);
 });

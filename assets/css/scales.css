@@ -23,7 +23,7 @@ li.white-key {
     height: 100%;
     width: 4.54%;
     z-index: 1;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 0 0 5px 5px;
     background: white;
     transition: 0.1s;
@@ -42,18 +42,38 @@ li.black-key {
     width: 2.27%;
     margin: 0 0 0 -1.135%;
     z-index: 2;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 0 0 3px 3px;
     background: black;
     transition: 0.1s;
 }
 
-.white-key.highlighted {
+.white-key.selected {
     background: #ff0000;
 }
 
-.black-key.highlighted {
+.white-key.highlighted {
+    background: #5151ff;
+}
+
+.white-key.selected.highlighted {
+    background: #02da02;
+}
+
+.black-key.selected {
     background: #bb0000;
+}
+
+.black-key.highlighted {
+    background: #5151bb;
+}
+
+.black-key.selected.highlighted {
+    background: #02bb02;
+}
+
+li:hover {
+    cursor: pointer;
 }
 
 ul#keyboard li:first-child {
@@ -62,6 +82,11 @@ ul#keyboard li:first-child {
 
 ul#keyboard li:last-child {
     border-radius: 0 5px 5px 5px;
+}
+
+#keyboard-controls {
+    display: flex;
+    justify-content: space-around;
 }
 
 /********************************/
